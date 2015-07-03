@@ -26,7 +26,7 @@ a *distributed test execution* environment.
 
 When to Use It
 --------------
-
+dv
 Generally speaking, there's two reasons why you might want to use Selenium-Grid.
 
 - To run your tests against multiple browsers, multiple versions of browser, and browsers running on different operating systems.
@@ -257,7 +257,7 @@ Extend ``org.openqa.grid.web.servlet.RegistryBasedServlet`` when you need access
 So for our example, lets say we are creating two servlets. 
 
 1. A servlet ( lets call it as ``org.openqa.demo.AllNodes`` ) to be injected at the hub. When this servlet is invoked, it would list out all the nodes that are registered to the Hub and 
-2. A servlet ( lets call it as ``org.openqa.demo.NodeLog`` ) to be injected into the node. When this servlet is invoked, it would read the logs from the node and serve it as a web page. For the sake of simplicity we are not going to be deliving into how to have the node redirect all its logging to a log file.
+2. A servlet ( lets call it as ``org.openqa.demo.NodeLog`` ) to be injected into the node. When this servlet is invoked, it would read the logs from the node and serve it as a web page. For the sake of simplicity we are not going to be diving into how to have the node redirect all its logging to a log file.
 
 
 Now you need to build a jar file (lets assume its called ``myservlets.jar``) that contains both the above mentioned classes (``AllNodes`` and ``NodeLog``).
